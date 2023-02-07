@@ -1,0 +1,5 @@
+server:
+  servlet:
+    context-path: /poc-spring-security-using-basic-auth/games
+  error:
+    include-message: always
