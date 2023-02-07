@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "01a5c710-6731-49f2-b0bd-46775d4bd415",
+		"name": "POC - Spring Security using Basic Auth",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2588050"
+	},
+	"item": [
+		{
+			"name": "GET Health Check",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/poc-spring-security-using-basic-auth/games/api/v1/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"poc-spring-security-using-basic-auth",
+						"games",
+						"api",
+						"v1",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Games",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "c69f238e-fdb9-4bf2-a512-af8fac1d81ad",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/poc-spring-security-using-basic-auth/games/api/v1/games",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"poc-spring-security-using-basic-auth",
+						"games",
+						"api",
+						"v1",
+						"games"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET Games By ID",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "428188b4-567e-4376-9a16-115a6a09536f",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/poc-spring-security-using-basic-auth/games/api/v1/games/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"poc-spring-security-using-basic-auth",
+						"games",
+						"api",
+						"v1",
+						"games",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST Games",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "e075ee48-dbb1-443c-befb-64a15e97ca4f",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "user",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    // TODO\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/poc-spring-security-using-basic-auth/games/api/v1/games",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"poc-spring-security-using-basic-auth",
+						"games",
+						"api",
+						"v1",
+						"games"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
